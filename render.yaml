@@ -1,0 +1,10 @@
+# Render.com par free hosting ke liye blueprint.
+# GitHub repo mein ye file root par rakhein, phir Render dashboard mein
+# "New +" -> "Blueprint" -> repo select karein. Baaki Render khud kar lega.
+services:
+  - type: web
+    name: social-video-downloader
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /
